@@ -1,0 +1,64 @@
+html>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+  background-color: var(--Light-gray);
+  font-size: 15px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: var(--White);
+  border-radius: 10px;
+}
+.card > * {
+  margin: 15px;
+}
+
+.qr-code-link {
+  display: block;
+  width: 288px;
+}
+
+.qr-code-img {
+  width: 99%;
+  border-radius: 10px;
+
+}
+
+.card > h1 {
+  font-size: 22px;
+  font-family: 'Outfit', sans-serif;
+  color: var(--Dark-blue);
+}
+
+.card > p {
+  font-family: 'Outfit', sans-serif;
+  color: var(--Grayish-blue);
+  margin-bottom: 50px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
